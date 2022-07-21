@@ -47,9 +47,7 @@ const Text = () => {
         const border = document.querySelectorAll('.icons-border')
         const button = document.querySelector('#new-quote')
 
-        const RGB = background.style.backgroundColor;
         let newColor = colors[Math.round(Math.random() * 12)]
-
 
             background.style.backgroundColor = newColor
             text.style.color = newColor
