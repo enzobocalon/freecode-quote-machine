@@ -1,0 +1,71 @@
+.container{
+    background-color: #121212;
+    transition: .3s ease;
+}
+
+#quote-box{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+#text{
+    font-weight: 400;
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    letter-spacing: 2px;
+    transition: .3s ease;
+}
+
+#autor{
+    transition: .3s ease;
+}
+
+#author-container{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 10px;
+    margin-right: 30px;
+}
+
+#quotes{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+
+#icons{
+    font-size: 20px;
+    display: flex;
+    justify-content: space-between;
+    width: 20%;
+    align-items: center;
+}
+
+#tumblr, #twitter{
+    color: white;
+}
+
+.icons-border{
+    background-color: #121212;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .3s ease;
+}
+
+#new-quote{
+    background: #121212;
+    border: none;
+    color: white;
+    padding: 15px;
+    border-radius: 10px;
+    font-family: 'Raleway';
+    cursor: pointer;
+    transition: .3s ease;
+}
