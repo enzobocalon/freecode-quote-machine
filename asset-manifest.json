@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/freecode-quote-machine/static/css/main.7e2594bd.css",
+    "main.js": "/freecode-quote-machine/static/js/main.89c748b2.js",
+    "index.html": "/freecode-quote-machine/index.html",
+    "main.7e2594bd.css.map": "/freecode-quote-machine/static/css/main.7e2594bd.css.map",
+    "main.89c748b2.js.map": "/freecode-quote-machine/static/js/main.89c748b2.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7e2594bd.css",
+    "static/js/main.89c748b2.js"
+  ]
+}
