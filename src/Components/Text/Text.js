@@ -9,19 +9,23 @@ import {GrTumblr} from 'react-icons/gr'
 const Text = () => {
 
     const [newQuote, setNewQuote] = useState([])
-    const [color, newColor] = useState();
     
     const getNewQuote = () => {
     
         getApi().then((data) =>{
             let i = Math.round(Math.random() * 1600)
-            setNewQuote(data[i])      
+            if(data[i].author == null){
+                data[i].author = 'Unknown author'
+                setNewQuote(data[i])  
+            } else{
+                setNewQuote(data[i])  
+            }
+                
         })
 
     }
 
     const getNewColor = () => {
-
         var colors = [
             '#16a085',
             '#27ae60',
@@ -36,27 +40,28 @@ const Text = () => {
             '#77B1A9',
             '#73A857'
           ];
-        
-        let finalColor = colors[Math.round(Math.random() * 12)]
-
+                
         const background = document.querySelector('.container')
         const text = document.querySelector('#text')
         const author = document.querySelector('#author')
         const border = document.querySelectorAll('.icons-border')
         const button = document.querySelector('#new-quote')
 
-        background.style.backgroundColor = finalColor
-        text.style.color = finalColor
-        author.style.color = finalColor
+        const RGB = background.style.backgroundColor;
+        let newColor = colors[Math.round(Math.random() * 12)]
 
-        border.forEach((target) => {
-            target.style.backgroundColor = finalColor
-        })
 
-        button.style.backgroundColor = finalColor
+            background.style.backgroundColor = newColor
+            text.style.color = newColor
+            author.style.color = newColor
+    
+            border.forEach((target) => {
+                target.style.backgroundColor = newColor
+            })
+    
+            button.style.backgroundColor = newColor
 
     }
-
 
     const handleClick = () => {
         getNewQuote();
@@ -65,7 +70,7 @@ const Text = () => {
 
     useEffect(() => {
         getNewQuote()
-        getNewColor()
+        getNewColor();
     },[])
 
   return (
@@ -78,7 +83,7 @@ const Text = () => {
         </div>
         <div id="quotes">
             <div id="icons">
-                <a className='icons-border' href={`https://twitter.com/intent/tweet?text=${newQuote.text}%0a-%20${newQuote.author}`} >
+                <a className='icons-border' href={`https://twitter.com/intent/tweet?text=${newQuote.text}%0a-%20${newQuote.author}`} target='__blank'>
                     <FaTwitter id='twitter'/>
                 </a>
                 <a className='icons-border'>

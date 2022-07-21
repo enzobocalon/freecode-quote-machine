@@ -1,5 +1,4 @@
 import './App.css';
-import api from './services/api'
 import QuoteBox from './Components/QuoteBox/QuoteBox'
 
 function App() {
