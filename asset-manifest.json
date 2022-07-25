@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/freecode-quote-machine/static/css/main.e373cacd.css",
-    "main.js": "/freecode-quote-machine/static/js/main.a2afffda.js",
+    "main.js": "/freecode-quote-machine/static/js/main.0a9477b5.js",
     "index.html": "/freecode-quote-machine/index.html",
     "main.e373cacd.css.map": "/freecode-quote-machine/static/css/main.e373cacd.css.map",
-    "main.a2afffda.js.map": "/freecode-quote-machine/static/js/main.a2afffda.js.map"
+    "main.0a9477b5.js.map": "/freecode-quote-machine/static/js/main.0a9477b5.js.map"
   },
   "entrypoints": [
     "static/css/main.e373cacd.css",
-    "static/js/main.a2afffda.js"
+    "static/js/main.0a9477b5.js"
   ]
 }
